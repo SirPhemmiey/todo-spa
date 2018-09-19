@@ -14,5 +14,5 @@ app.get('/', function(req, res) {
 });
 app.use('/api', todoRoutes);
 app.listen(port, function() {
-    console.log(`Listening on port ${port}`);
+    console.log(`Listening with 🔥  on port ${port}`);
 })

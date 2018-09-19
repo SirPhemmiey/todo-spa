@@ -45,7 +45,6 @@ $(document).ready(function() {
 
     function removeTodo(todo) {
         var id = todo.data('id');
-          // if (confirm("Are you sure?")) {
             $.ajax({
                 method: 'DELETE',
                 url: '/api/todos/'+ id
@@ -53,7 +52,6 @@ $(document).ready(function() {
             .then(function() {
                 todo.remove()
             })
-         //  }
     }
 
     function updateTodo(todo) {
@@ -65,7 +63,7 @@ $(document).ready(function() {
             url: '/api/todos/'+id,
             data: updatedData
         })
-        .then(function(data)    {
+        .then(function()  {
             todo.toggleClass("done");
             todo.data("completed", isDone);
         });
