@@ -5,6 +5,17 @@
   "main": "index.js",
   "author": "SirPhemmiey",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "8.10.0"
+  },
+  "now": {
+    "engines": {
+      "node": "8.10.0"
+    }
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "dotenv": "^6.0.0",
